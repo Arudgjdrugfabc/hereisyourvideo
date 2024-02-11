@@ -112,7 +112,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Download By (Eg Download By RAMAN)**")
+    await editable.edit("**Download By (Eg Download By Atul)**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -201,7 +201,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n**Bot Made by ☆☆ ​🅁🄰🄼🄰🄽 ☆☆**"
+                    Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n**Bot Made by ☆☆ ​Atul ☆☆**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
